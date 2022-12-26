@@ -11,5 +11,27 @@
     <link href="/dist/style.css" rel="stylesheet" />
     <!-- Tailwind CSS -->
   </head>
-  <body></body>
+  <body
+    class="flex h-screen items-center justify-center bg-primary-color text-gray-100"
+  >
+    <div
+      class="flex w-[400px] flex-col gap-7 rounded-lg bg-primary-color p-14 shadow-[20px_20px_60px_rgb(133,66,188),-20px_-20px_60px_rgb(181,90,254)]"
+    >
+      <div class="mb-10 text-center text-2xl font-bold">
+        Password Strength Checker
+      </div>
+      <div id="strength" class="text-center text-lg text-green-400">Strong</div>
+      <input
+        type="password"
+        id="password"
+        class="h-14 w-full rounded-lg bg-primary-color px-5 text-lg shadow-[inset_3px_3px_6px_rgb(24,26,35),inset_-3px_-3px_6px_rgb(60,62,85)] outline-none"
+      />
+      <button
+        id="check"
+        class="h-14 w-full rounded-lg border-2 border-solid border-[#8d3ed3] text-lg font-semibold transition-all duration-300 ease-in-out hover:cursor-pointer hover:shadow-[0px_0px_15px_rgb(186,104,200),0px_0px_35px_rgb(123,44,191)]"
+      >
+        Check
+      </button>
+    </div>
+  </body>
 </html>
